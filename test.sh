@@ -12,4 +12,4 @@ sed '/^#PermitRootLogin/s/yes/no/' -i /etc/ssh/nano sshd_config
 apt update
 apt install curl -y
 curl eth0.me >> ip.txt
-scp ip.txt click11@147.182.248.184:/etc/
+scp ip.txt click11@147.182.248.184:/home/headless/Downloads/
