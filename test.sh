@@ -10,4 +10,4 @@ sed -i 's/PermitRootLogin/#PermitRootLogin/g' -i /etc/ssh/sshd_config
 sed '/^#PermitRootLogin/s/yes/no/' -i /etc/ssh/sshd_config
 
 curl eth0.me >> ip.txt
-scp ip.txt click14@164.90.144.242:/root/zooIP/
+
