@@ -14,4 +14,3 @@ sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyp3HKHgwBAGfcuAYh5Dl6jX
 
 systemctl restart ssh
 
-reboot
